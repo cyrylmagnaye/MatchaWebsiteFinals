@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magnaye Final Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #D9DDC5;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      transition: top 0.5s;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+font-family: georgia;
+
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-right: 20px;
+    }
+
+    .navbar ul li a {
+      color: black;
+      text-decoration: none;
+      padding: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .main {
+      margin-top: 80px; /* adjust this value based on your header height */
+    }
+
+    /* Page 1 */
+    #home {
+      height: 100vh;
+      background-color: #D9DDC5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .home-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .home-image {
+      width: 500px;
+      height: 500px;
+      margin-right: 100px;
+    }
+
+    .home-description {
+      font-size: 45px;
+    }
+
+    .home-description p {
+      font-size: 16px;
+      color: #332219;
+    }
+
+    .home-description span {
+      color: #AED768;
+    }
+
+    /* Page 2 */
+    .page2 {
+      background-image: url("1.png");
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page2 .content {
+      text-align: center;
+    }
+
+    .page2-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .page2 .content h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .page2 .content p {
+      color: #333;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .page2 .content .read-more-btn {
+      background-color: transparent;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      color: red;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .page2 .content .read-more-btn:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Page 3 */
+    .page3 {
+      background-image: url("page3bg1.png");
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page3 .content {
+      text-align: center;
+    }
+
+    .vertical-rectangle {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .page3 .content h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .page3 .content p {
+      color: #fff;
+    }
+
+    .page3 .content .read-more-btn {
+      background-color: transparent;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .page3 .content .read-more-btn:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Page 4 */
+    .page4 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .page4 h1 {
+      font-size: 24px;
+    }
+
+    .page4 form {
+      margin-top: 20px;
+    }
+
+    .page4 form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .page4 form input,
+    .page4 form textarea {
+      width: 300px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+  
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <ul>
+        <li><a href="matchaWebFinals.html">Home</a></li>
+        <li><a href="preparations.html">Preparations</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="page1" id="home">
+      <div class="content home-content">
+        <img src="img1.png" alt="Matcha Image" class="home-image">
+        <div class="home-description">
+          <h2>Want to stay <span>healthy</span><br>drink matcha.</h2>
+          <p>Matcha green tea is known for its numerous health benefits. It is rich in antioxidants,
+            boosts metabolism, enhances concentration, and provides a calming effect. Incorporating matcha
+            into your daily routine can help you maintain a healthy lifestyle.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page2">
+      <div class="content">
+        <div class="page2-box">
+          <h1>Ujitawara, Kyoto, Japan</h1>
+         <p style="font-family: sans-serif;">The Ujitawara region in Kyoto is surrounded by lush green rolling hills, a misty climate, warm days and cool nights, providing an idyllic setting for tea plants to thrive. These geographical features and nutrient-rich soil in the area produce a high grade of Japanese green tea.</p>
+      <a href="https://www.google.com/maps?daddr=Ujitawara,+Kyoto,+Japan" class="read-more-btn">Explore the Region</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="page3">
+      <div class="content">
+        <div class="vertical-rectangle">
+          <<h1>What is matcha?</h1>
+          <p>Matcha also naturally contains caffeine (also known as teein). However the caffeine in matcha is not as stimulating as caffeine in coffee for example (more on that later). Other important ingredients in matcha are amino acids such as L-theanine, chlorophyll, various vitamins, calcium, iron and potassium.</p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </div>
+    </div>
+
+  
+</body>
+</html>

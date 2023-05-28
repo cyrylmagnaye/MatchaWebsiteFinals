@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magnaye Final Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #A0A365;
+      font-family: sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      transition: top 0.5s;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin-right: 20px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .main {
+      margin-top: 80px; /* adjust this value based on your header height */
+    }
+
+    #preparation {}
+
+    .preparation-page {
+      padding: 50px;
+      color: #FFF;
+    }
+
+    .preparation-page2 {
+      padding: 50px;
+      background-color: #D0D2D2;
+    }
+
+    .preparation-page:nth-child(odd) {
+      background-color: #A3A157;
+    }
+
+    .preparation-page:nth-child(even) {
+      background-color: #D0D2D2;
+    }
+
+    .preparation-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .preparation-description2 {
+      flex: 1 1 300px;
+    }
+
+    .preparation-description {
+      flex: 1 1 300px;
+      margin-left: 20px;
+    }
+
+    .preparation-video {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .preparation-content {
+        flex-direction: column;
+      }
+
+      .preparation-video,
+      .preparation-description {
+        flex-basis: auto;
+      }
+    }
+
+    .preparation-description3 {
+      padding: 50px;
+      color: #FFF;
+    }
+  </style>
+  <script>
+    let prevScrollPos = window.pageYOffset;
+    window.onscroll = function() {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        document.querySelector("header").style.top = "0";
+      } else {
+        document.querySelector("header").style.top = "-80px";
+      }
+      prevScrollPos = currentScrollPos;
+    };
+  </script>
+</head>
+<body>
+  <header style= "font-family: georgia;">
+    <div class="navbar">
+      <ul>
+        <li><a href="matchaWebFinals.html">Home</a></li>
+        <li><a href="preparations.html">Preparations</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+ 
+<section id="preparation" class="main">
+    <div class="preparation-page">
+        <center>
+           <h1 style=" font-family: georgia;color: #332219; font-size: 70px;">Preparation</h1>
+        </center>
+        <div class="preparation-content">
+            <div class="preparation-description">
+                <center>
+                    <p style="font-size: 20px;">
+                        There are infinite ways to enjoy your matcha. Covering traditional Japanese tea ceremony<br>
+                        methods, as well as modern preparations suitable for today's faster lifestyle, there is no one<br>
+                        way to prepare matcha. The choice is yours, and we recommend exploring as many of these<br>
+                        as possible to find what works best for you.
+                        <br><br><br>
+                        If you are just beginning your journey with matcha, we'd recommend starting with a latte or<br>
+                        cold preparation, and working your way towards Usucha as your taste palate becomes more <br>
+                        accustomed to the unique flavor of matcha.<br>
+                    </p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="preparation-page2">
+        <center>
+            <h1 style=" font-family: georgia; color: #332219; font-size: 70px;">How to Prepare Matcha</h1>
+        </center>
+        <div class="preparation-content">
+            <div class="preparation-video">
+                <iframe width="300" height="300" src="usucha.webm" frameborder="0" allowfullscreen autoplay></iframe>
+            </div>
+            <div class="preparation-description">
+                <p style="  font-family: georgia;color: #332219; font-size: 40px;">Usucha (Thin Matcha)</p>
+                <p style="color: black;">
+                    This is what we consider the most traditional and common preparation. Usucha brings out the best of your premium matcha's characteristics. It can be enjoyed directly or as a base for other popular matcha preparations we've outlined below.
+                </p>
+            </div>
+        </div>
+
+        <div class="preparation-content">
+            <div class="preparation-description">
+                <p style=" font-family: georgia;color: #332219; font-size: 40px;">Koicha (Thick, Strong Matcha)</p>
+                <p style="color: black;">
+                    A traditional preparation of thick matcha, used for traditional Japanese tea ceremonies. This approach emphasizes the tasting notes of each cultivation in the strongest way. This will give a thick, paint-like consistency. We'd suggest this method for experienced matcha drinkers. Light astringency and earthy notes can be more pronounced, but with enough experience, this is a beautiful departure from your daily routine.
+                </p>
+            </div>
+            <div class="preparation-video">
+                <iframe width="300" height="300" src="koicha.webm" frameborder="0" allowfullscreen autoplay></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="preparation-description3">
+        <center>
+            <h1 style=" font-family: georgia;color: white; font-size: 70px;">What to Avoid</h1>
+            <p style="color: #332219; font-size: 18px;"><strong>Boiling water: </strong>If we had to give one major tip to avoid having a bitter bowl of matcha, it would be to ensure you don't use boiling water (100°C). Matcha is rich in chlorophyll, and using water above 80°C can burn chlorophyll, leaving a terrible result. If you don't have a kettle with temperature controls, you have a few options. Firstly, you can stop your kettle a few seconds before it reaches boiling point. Another option is boiling water then pouring it between 2 cups 5-6 times to lower the heat. You don't have to heat the water at exactly 70°C, but just make sure to avoid water at or near boiling point.</p>
+            <p style="color: #332219; font-size: 18px;"><strong>Using a fork or spoon:</strong>A Chasen (bamboo whisk) is the best way to enjoy matcha and help mellow the strong flavor. Using a fork or spoon isn't a great way to enjoy matcha, as it won't incorporate enough air during the preparation or give the matcha powder a chance to blend with the water. If you're not ready to invest in a Chasen, try our tips above: using a milk frother, blender, or simply shaking in a bottle. You'll be much more pleased with the results.</p>
+            <p style="color: #332219; font-size: 18px;"><strong>Not using a sieve:</strong>This tip isn't absolutely required but can make a difference. Because matcha is finely ground into a powder and has a high surface area, the powder can build an electrostatic charge over time, which results in clumping together. This is quite natural but can get in the way of a smooth drinking experience. We'd recommend using a small sieve to sift your matcha before preparation. In addition to avoiding a lumpy drink, it also helps mellow out the flavor and reduce bitterness.</p>
+        </center>
+    </div>
+</section>
+
+</body>
+</html>

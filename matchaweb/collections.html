@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #BCBC98;
+      font-family: sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      transition: top 0.5s;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin-right: 20px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .main {
+      margin-top: 80px; /* adjust this value based on your header height */
+    }
+
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    td {
+      width: 300px; /* fixed width for the cells */
+      height: 300px; /* fixed height for the cells */
+      padding: 20px;
+      border: 1px solid #BCBC98 /* transparent borders */
+    }
+    
+    .cell-content {
+      text-align: center;
+    }
+    
+    .image-container {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .read-more {
+      display: none;
+    }
+    
+    .show-content .read-more {
+      display: block;
+    }
+    
+    .rounded-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #000000; /* black button background */
+      color: #ffffff; /* white button text */
+      border-radius: 20px;
+      text-decoration: none;
+    }
+  </style>
+<script>
+    let prevScrollPos = window.pageYOffset;
+    window.onscroll = function() {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        document.querySelector("header").style.top = "0";
+      } else {
+        document.querySelector("header").style.top = "-80px";
+      }
+      prevScrollPos = currentScrollPos;
+    };
+  </script>
+</head>
+<body>
+<header style= "font-family: georgia;">
+    <div class="navbar">
+      <ul>
+        <li><a href="matchaWebFinals.html">Home</a></li>
+        <li><a href="preparations.html">Preparations</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+  <br><br><br><br><br>
+ 
+  <table>
+    <tr>
+      <td>
+        <div class="cell-content">
+          <p style= "font-family: georgia; font-size: 50px; ">Latte</p>
+          <img src="t1.png" alt="Image 1" class="image-container">
+          <p>Following the instructions above for Usucha (thin matcha), but combined at the end with your favourite warm milk & sweetener. This is a lovely way to begin your journey with matcha, if you are new to the drink. It balances astringency while bringing out earthy and floral notes. .</p>
+          <div class="read-more">
+            <p>Sift 1/2 tsp of matcha powder into a Chawan (tea bowl). Wet with 10mL of water heated to 70°C. Work into smooth paste using a Chasen (bamboo whisk). Add 70mL of heated water and whisk in a zigzag pattern until a rich foam has developed. Warm or froth your preferred milk (we recommend barista style oat milk for a rich, creamy latte). Add your warmed milk to the prepared thin matcha and whisk until a light foam has formed.</p>
+          </div>
+          <a href="#" class="rounded-button">Read More</a>
+        </div>
+      </td>
+      <td>
+        <div class="cell-content">
+          <p style= "font-family: georgia; font-size: 50px; ">Cold & Iced</p>
+          <img src="t2.png" alt="Image 2" class="image-container">
+          <p>This is a lovely preparation that reduces astringency and emphasizes a different set of tasting notes in your matcha. Similar to thin matcha, but without the fuss of heating water to a perfect temperature.</p>
+          <div class="read-more">
+            <p>Sift 1/2 tsp of matcha powder into a Chawan (tea bowl). Wet with 10mL of cold water. Work into smooth paste using a Chasen (bamboo whisk). Add 70mL of cold water and whisk in a zigzag pattern for 30 seconds. With a cold preparation, you will not achieve a foam. Enjoy directly, with a few ice cubes, or some of your favourite milk. </p>
+          </div>
+          <a href="#" class="rounded-button">Read More</a>
+        </div>
+      </td>
+      <td>
+        <div class="cell-content">
+          <p style= "font-family: georgia; font-size: 50px; ">Milk Frother</p>
+          <img src="t3.png" alt="Image 3" class="image-container">
+          <p>If you don't yet have access to a Chasen (bamboo whisk), then you can use an electric handheld milk frother in it's place. This is a quick and easy process, incorporating lots of air, and ending with a light foam. It can feel like cheating, but this method still brings out of the best of your premium matcha. </p>
+          <div class="read-more">
+            <p>Sift 1/2 tsp of matcha powder into a Chawan (tea bowl). Wet with 10ml of water heated to 70°C. Work into smooth paste using a spoon. Add 70mL of heated water and whisk using an electric handheld milk frother until a light foam has developed. </p>
+          </div>
+          <a href="#" class="rounded-button">Read More</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cell-content">
+          <<p style= "font-family: georgia; font-size: 50px; ">Blender & Shaker Bottle</p>
+          <img src="t4.png" alt="Image 4" class="image-container">
+          <p>LSimilarly to a milk frother, a blender is another easy, modern way to prepare your matcha. </p>
+          <div class="read-more">
+            <p>Sift 1/2 tsp of matcha powder into a bowl. Wet with 10ml of water heated to 70°C. Work into smooth paste using a spoon or fork. Add the paste along with 70mL of heated into a blender and blend until a rich foam as developed. Enjoy directly or combine with your favourite smoothie ingredients.  </p>
+          </div>
+          <a href="#" class="rounded-button">Read More</a>
+        </div>
+      </td>
+      <td>
+        <div class="cell-content">
+          <p style= "font-family: georgia; font-size: 50px; ">Baking</p>
+          <img src="t5.png" alt="Image 5" class="image-container">
+          <p>Matcha powder is really versatile and can be a great base for cookies, cakes and other baked goods.</p>
+          <div class="read-more">
+            <p> </p>
+          </div>
+          <a href="#" class="rounded-button">Read More</a>
+        </div>
+      </td>
+      <td>
+        <div class="cell-content">
+          <p style= "font-family: georgia; font-size: 50px; ">Dalgona</p>
+          <img src="t6.png" alt="Image 6" class="image-container">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="read-more">
+            <p>Full paragraph content goes here.</p>
+          </div>
+          <a href="#" class="rounded-button">Read More</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    // JavaScript to toggle content visibility when the "Read More" button is clicked
+    var buttons = document.getElementsByClassName('rounded-button');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        this.parentNode.classList.toggle('show-content');
+      });
+    }
+  </script>
+</body>
+</html>
